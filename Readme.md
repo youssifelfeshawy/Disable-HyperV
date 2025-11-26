@@ -131,4 +131,8 @@ In Windows 11, disable the following features:
 
 ## 8. Restart the PC
 
-After completing the above steps, restart your PC. Before the OS boots, you will be prompted that the UEFI was modified. Press **F3** and press **Enter** to continue.
+After completing the above steps, restart your PC. Before the OS boots, you will be prompted that the UEFI was modified. Press **F3** and press **Enter** to continue. [1]
+
+---
+
+[1]: https://community.broadcom.com/vmware-cloud-foundation/discussion/windows-11-24h2-hsot-how-to-disable-virtual-based-security?utm_source=chatgpt.com "Windows 11 24h2 hsot - how to disable Virtual Based Security"
