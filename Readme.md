@@ -136,3 +136,28 @@ After completing the above steps, restart your PC. Before the OS boots, you will
 ---
 
 [1]: https://community.broadcom.com/vmware-cloud-foundation/discussion/windows-11-24h2-hsot-how-to-disable-virtual-based-security?utm_source=chatgpt.com "Windows 11 24h2 hsot - how to disable Virtual Based Security"
+
+
+## Re-enable VBS, Credential Guard, and Core Isolation
+
+If you wish to **re-enable** Virtualization-Based Security (VBS), run the following command in **Command Prompt** (Run as Administrator):
+
+```
+bcdedit /set hypervisorlaunchtype auto
+```
+
+To **disable it again**, use this command:
+
+```
+bcdedit /set hypervisorlaunchtype off
+```
+
+To check if VBS is working or not, run this command:
+
+```
+(Get-CimInstance Win32_ComputerSystem).HypervisorPresent
+```
+
+If the command returns `True`, it means VBS is enabled. If it returns `False`, VBS is disabled.
+
+---
